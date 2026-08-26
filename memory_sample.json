@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "timestamp": "2026-08-25T14:15:22Z",
+      "source": "Volatility 3",
+      "title": "Process Tree Anomaly",
+      "detail": "svchost.exe PID 4812 launched from cmd.exe PID 3920"
+    },
+    {
+      "timestamp": "2026-08-25T14:16:05Z",
+      "source": "Volatility 3",
+      "title": "Network Connection",
+      "detail": "192.168.1.105:49210 -> 198.51.100.45:8443 ESTABLISHED PID 4812"
+    },
+    {
+      "timestamp": "2026-08-25T14:16:06Z",
+      "source": "Volatility 3",
+      "title": "Memory Protection Alert",
+      "detail": "Injected MZ header in PAGE_EXECUTE_READWRITE VAD"
+    }
+  ]
+}
