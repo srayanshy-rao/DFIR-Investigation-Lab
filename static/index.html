@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DFIR Investigation Lab</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<aside>
+  <div class="brand">⬡ <span>DFIR LAB</span></div>
+  <nav>
+    <a class="active" href="#dashboard">Dashboard</a>
+    <a href="#investigate">New Investigation</a>
+    <a href="#cases">Case Vault</a>
+    <a href="#verifier">Hash Verification</a>
+    <a href="#timeline">Timeline</a>
+  </nav>
+  <div class="api" id="status">Checking API…</div>
+</aside>
+
+<main id="dashboard">
+<header>
+  <div>
+    <p class="eyebrow">DIGITAL FORENSICS & INCIDENT RESPONSE</p>
+    <h1>Evidence Intelligence Dashboard</h1>
+    <p class="muted">Hash integrity, signature analysis, case management and explainable risk indicators.</p>
+  </div>
+  <button class="outline" id="refresh">↻ Refresh data</button>
+</header>
+
+<section class="stats">
+  <div class="stat"><span>Total Cases</span><b id="stat-cases">0</b></div>
+  <div class="stat"><span>High Risk</span><b id="stat-high">0</b></div>
+  <div class="stat"><span>Latest Entropy</span><b id="stat-entropy">—</b></div>
+  <div class="stat"><span>API</span><b id="stat-api">—</b></div>
+</section>
+
+<section class="panel" id="investigate">
+  <div class="section-head">
+    <div><p class="eyebrow">LIVE ANALYSIS</p><h2>Start Investigation</h2></div>
+    <span class="pill">REAL FILE PROCESSING</span>
+  </div>
+
+  <form id="investigation-form">
+    <div class="grid">
+      <label>Case title<input id="title" placeholder="Suspicious document investigation"></label>
+      <label>Investigator<input id="investigator" value="Srayansh Yadav"></label>
+    </div>
+    <label class="dropzone" id="dropzone">
+      <input id="evidence" type="file" required>
+      <span class="upload-icon">⇧</span>
+      <strong>Choose evidence or drop it here</strong>
+      <small>PDF, Office files, images, archives, executables and other test evidence</small>
+      <em id="file-name">No file selected</em>
+    </label>
+    <button class="primary" id="submit" type="submit">Run DFIR Analysis <span>→</span></button>
+  </form>
+
+  <div id="scan" class="scan hidden"><div class="scanbar"></div><span>Acquiring evidence and running analysis modules…</span></div>
+  <div id="result" class="result hidden"></div>
+  <a id="report" class="report-link hidden" target="_blank">Download investigation report →</a>
+</section>
+
+<section class="panel" id="cases">
+  <div class="section-head">
+    <div><p class="eyebrow">CASE MANAGEMENT</p><h2>Investigation Vault</h2></div>
+    <div class="filters">
+      <input id="case-search" placeholder="Search case, file or investigator">
+      <select id="risk-filter">
+        <option value="ALL">All risks</option>
+        <option value="HIGH">High risk</option>
+        <option value="MEDIUM">Medium risk</option>
+        <option value="LOW">Low risk</option>
+      </select>
+    </div>
+  </div>
+  <div id="case-list" class="case-list">Loading cases…</div>
+</section>
+
+<section class="panel" id="verifier">
+  <div class="section-head">
+    <div><p class="eyebrow">INTEGRITY CHECK</p><h2>Hash Verification</h2></div>
+  </div>
+  <p class="muted">Select a case, paste an expected MD5 or SHA-256 value, and compare it with the stored forensic hash.</p>
+  <form id="verify-form" class="verify-form">
+    <select id="verify-case"><option value="">Select investigation case</option></select>
+    <input id="expected-hash" placeholder="Paste expected MD5 or SHA-256">
+    <button class="primary compact" type="submit">Verify Integrity</button>
+  </form>
+  <div id="verify-result" class="verify-result hidden"></div>
+</section>
+
+<section class="panel" id="timeline">
+  <div class="section-head"><div><p class="eyebrow">EVENT CORRELATION</p><h2>Investigation Timeline</h2></div></div>
+  <div id="timeline-list">Loading timeline…</div>
+</section>
+</main>
+
+<div id="case-modal" class="modal hidden">
+  <div class="modal-card">
+    <button id="close-modal" class="close">×</button>
+    <div id="case-detail">Loading case details…</div>
+  </div>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,630 @@
+{
+  "cases": [
+    {
+      "id": "CASE-20260826-170839-ED1E",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 17:08:39 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "HIGH Risk"
+      ],
+      "summary": "Automated analysis completed for suspecious.docx. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: PDF document",
+        "Entropy: 7.7376",
+        "Risk score: 80/100 (HIGH)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate suspecious.docx\n[OK] MD5: 4464c755e4aa99c9cea9759c0176eeed\n[OK] SHA256: aa4f540a865818285bdf8b7fab38a72a8effa160428dd87ea9c98866e3e899cc\n[OK] Signature: PDF document\n[OK] Entropy: 7.7376\n[RISK] 80/100 (HIGH)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "suspecious.docx",
+        "stored_name": "776f870a5ee94efc9b69e4aade8817b5_suspecious.docx",
+        "size": 81029,
+        "extension": ".docx",
+        "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "detected_type": "PDF document",
+        "magic_bytes": "25 50 44 46 2d",
+        "md5": "4464c755e4aa99c9cea9759c0176eeed",
+        "sha256": "aa4f540a865818285bdf8b7fab38a72a8effa160428dd87ea9c98866e3e899cc",
+        "entropy": 7.7376
+      },
+      "risk": {
+        "score": 80,
+        "level": "HIGH",
+        "extension_mismatch": true,
+        "reasons": [
+          "File extension does not match the detected binary signature.",
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260826-170043-4297",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 17:00:43 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for test.exe.pdf. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: PDF document",
+        "Entropy: 7.9628",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate test.exe.pdf\n[OK] MD5: 541ce3ed76253b7b4b0a85f540cc1318\n[OK] SHA256: 140d327cc73eb693a6d1eae4941ed157d1fa9f1fa7833bbdbacf9467c2967ba9\n[OK] Signature: PDF document\n[OK] Entropy: 7.9628\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "test.exe.pdf",
+        "stored_name": "71f9ebbf4d4e4916a5ea5d96728a90d3_test.exe.pdf",
+        "size": 174336,
+        "extension": ".pdf",
+        "mime_type": "application/pdf",
+        "detected_type": "PDF document",
+        "magic_bytes": "25 50 44 46 2d",
+        "md5": "541ce3ed76253b7b4b0a85f540cc1318",
+        "sha256": "140d327cc73eb693a6d1eae4941ed157d1fa9f1fa7833bbdbacf9467c2967ba9",
+        "entropy": 7.9628
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260826-170017-E65A",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 17:00:17 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for test.exe.JPG. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: JPEG image",
+        "Entropy: 7.943",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate test.exe.JPG\n[OK] MD5: 9e41d91c9d15f9263a2fd2654e4bb72a\n[OK] SHA256: a438f285437e39d10947511a573cda56452615a9c8cc8ae0090a42b20edbbd2f\n[OK] Signature: JPEG image\n[OK] Entropy: 7.943\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "test.exe.JPG",
+        "stored_name": "aced21d6f6bf4e3db1ba603be053038a_test.exe.JPG",
+        "size": 81692,
+        "extension": ".jpg",
+        "mime_type": "image/jpeg",
+        "detected_type": "JPEG image",
+        "magic_bytes": "ff d8 ff",
+        "md5": "9e41d91c9d15f9263a2fd2654e4bb72a",
+        "sha256": "a438f285437e39d10947511a573cda56452615a9c8cc8ae0090a42b20edbbd2f",
+        "entropy": 7.943
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260826-170002-BC27",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 17:00:02 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for test.exe.pdf. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: PDF document",
+        "Entropy: 7.9628",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate test.exe.pdf\n[OK] MD5: 541ce3ed76253b7b4b0a85f540cc1318\n[OK] SHA256: 140d327cc73eb693a6d1eae4941ed157d1fa9f1fa7833bbdbacf9467c2967ba9\n[OK] Signature: PDF document\n[OK] Entropy: 7.9628\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "test.exe.pdf",
+        "stored_name": "4134ac53d7524c2780ae5425ebd506ab_test.exe.pdf",
+        "size": 174336,
+        "extension": ".pdf",
+        "mime_type": "application/pdf",
+        "detected_type": "PDF document",
+        "magic_bytes": "25 50 44 46 2d",
+        "md5": "541ce3ed76253b7b4b0a85f540cc1318",
+        "sha256": "140d327cc73eb693a6d1eae4941ed157d1fa9f1fa7833bbdbacf9467c2967ba9",
+        "entropy": 7.9628
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260826-165645-FC52",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 16:56:45 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for test.exe.pdf. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: PDF document",
+        "Entropy: 7.9628",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate test.exe.pdf\n[OK] MD5: 541ce3ed76253b7b4b0a85f540cc1318\n[OK] SHA256: 140d327cc73eb693a6d1eae4941ed157d1fa9f1fa7833bbdbacf9467c2967ba9\n[OK] Signature: PDF document\n[OK] Entropy: 7.9628\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "test.exe.pdf",
+        "stored_name": "0a902697cb6244e684d63ee413b5d020_test.exe.pdf",
+        "size": 174336,
+        "extension": ".pdf",
+        "mime_type": "application/pdf",
+        "detected_type": "PDF document",
+        "magic_bytes": "25 50 44 46 2d",
+        "md5": "541ce3ed76253b7b4b0a85f540cc1318",
+        "sha256": "140d327cc73eb693a6d1eae4941ed157d1fa9f1fa7833bbdbacf9467c2967ba9",
+        "entropy": 7.9628
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260826-165226-ACA9",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 16:52:26 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for CSD4002_ETHICAL-HACKING_LTP_1.0_1_CSD4002 (1).pdf. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: PDF document",
+        "Entropy: 7.9874",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate CSD4002_ETHICAL-HACKING_LTP_1.0_1_CSD4002 (1).pdf\n[OK] MD5: b4cb57ef870c5d6fb43ba22d88d29f46\n[OK] SHA256: 531aa4845208891f98d84d66d92811716699e0d9e9c8e07dc20189f4661bd200\n[OK] Signature: PDF document\n[OK] Entropy: 7.9874\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "CSD4002_ETHICAL-HACKING_LTP_1.0_1_CSD4002 (1).pdf",
+        "stored_name": "62351a8db48f426282fefc00663bd181_CSD4002_ETHICAL-HACKING_LTP_1.0_1_CSD4002 (1).pdf",
+        "size": 227858,
+        "extension": ".pdf",
+        "mime_type": "application/pdf",
+        "detected_type": "PDF document",
+        "magic_bytes": "25 50 44 46 2d",
+        "md5": "b4cb57ef870c5d6fb43ba22d88d29f46",
+        "sha256": "531aa4845208891f98d84d66d92811716699e0d9e9c8e07dc20189f4661bd200",
+        "entropy": 7.9874
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260826-160740-7671",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 16:07:40 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for FisherCart_Style_DFIR_Lab_Report.pdf. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: PDF document",
+        "Entropy: 7.0206",
+        "Risk score: 0/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate FisherCart_Style_DFIR_Lab_Report.pdf\n[OK] MD5: 99352c7192c4e60760eff880b9c32495\n[OK] SHA256: 02809dfacf13b5b2d998c19f7f416e1115711865784a15f4ddf12cfd9d2ca0c2\n[OK] Signature: PDF document\n[OK] Entropy: 7.0206\n[RISK] 0/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "FisherCart_Style_DFIR_Lab_Report.pdf",
+        "stored_name": "0ebe64c81a28441b8e79f393136b2656_FisherCart_Style_DFIR_Lab_Report.pdf",
+        "size": 128573,
+        "extension": ".pdf",
+        "mime_type": "application/pdf",
+        "detected_type": "PDF document",
+        "magic_bytes": "25 50 44 46 2d",
+        "md5": "99352c7192c4e60760eff880b9c32495",
+        "sha256": "02809dfacf13b5b2d998c19f7f416e1115711865784a15f4ddf12cfd9d2ca0c2",
+        "entropy": 7.0206
+      },
+      "risk": {
+        "score": 0,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "No high-confidence risk indicators were triggered by the current analysis rules."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260826-160647-9D52",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and explainable risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-26 16:06:47 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for dfir report.docx. The application calculated cryptographic hashes, inspected the file signature, measured entropy, checked extension consistency, and applied risk rules.",
+      "bullets": [
+        "Detected type: Microsoft Word document (DOCX)",
+        "Entropy: 7.8043",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate dfir report.docx\n[OK] MD5: 52cdf67c718d44cb1907f7fb9993c568\n[OK] SHA256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44\n[OK] Signature: Microsoft Word document (DOCX)\n[OK] Entropy: 7.8043\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "dfir report.docx",
+        "stored_name": "3e50157aa0ad4979ab17beb09072e70f_dfir report.docx",
+        "size": 18793,
+        "extension": ".docx",
+        "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "detected_type": "Microsoft Word document (DOCX)",
+        "magic_bytes": "50 4b 03 04",
+        "md5": "52cdf67c718d44cb1907f7fb9993c568",
+        "sha256": "9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44",
+        "entropy": 7.8043
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260825-181813-CC44",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 18:18:13 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for yud.pdf.exe. The application calculated cryptographic hashes, inspected the file signature, measured entropy, and applied basic risk rules.",
+      "bullets": [
+        "Detected type: Windows executable",
+        "Entropy: 6.0923",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate yud.pdf.exe\n[OK] MD5: 36dc042ec5a2496a9e1386882027447f\n[OK] SHA256: 3d5ee79a9e2d6ff0ecf90943acad0847aaab6a82f818c405b566f1722c60d238\n[OK] Signature: Windows executable\n[OK] Entropy: 6.0923\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "yud.pdf.exe",
+        "stored_name": "c06a9a81550d48a5a858eeb887294fd2_yud.pdf.exe",
+        "size": 108432,
+        "extension": ".exe",
+        "mime_type": "application/x-msdownload",
+        "detected_type": "Windows executable",
+        "magic_bytes": "4d 5a",
+        "md5": "36dc042ec5a2496a9e1386882027447f",
+        "sha256": "3d5ee79a9e2d6ff0ecf90943acad0847aaab6a82f818c405b566f1722c60d238",
+        "entropy": 6.0923
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "Evidence uses an executable or script-oriented extension."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260825-181000-3A55",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing, signature inspection and risk assessment",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 18:10:00 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "LOW Risk"
+      ],
+      "summary": "Automated analysis completed for dfir report.docx. The application calculated cryptographic hashes, inspected the file signature, measured entropy, and applied basic risk rules.",
+      "bullets": [
+        "Detected type: Microsoft Word document (DOCX)",
+        "Entropy: 7.8043",
+        "Risk score: 20/100 (LOW)"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate dfir report.docx\n[OK] MD5: 52cdf67c718d44cb1907f7fb9993c568\n[OK] SHA256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44\n[OK] Signature: Microsoft Word document (DOCX)\n[OK] Entropy: 7.8043\n[RISK] 20/100 (LOW)\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "dfir report.docx",
+        "stored_name": "c3d7cf7b00b44f3fa12869b9661dc6e1_dfir report.docx",
+        "size": 18793,
+        "extension": ".docx",
+        "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "detected_type": "Microsoft Word document (DOCX)",
+        "magic_bytes": "50 4b 03 04",
+        "md5": "52cdf67c718d44cb1907f7fb9993c568",
+        "sha256": "9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44",
+        "entropy": 7.8043
+      },
+      "risk": {
+        "score": 20,
+        "level": "LOW",
+        "extension_mismatch": false,
+        "reasons": [
+          "High entropy may indicate compressed, encrypted, or packed content."
+        ]
+      }
+    },
+    {
+      "id": "CASE-20260825-175553",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing and signature analysis",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 17:55:53 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "File Analysis"
+      ],
+      "summary": "Automated analysis completed for dfir report.docx. The application generated MD5/SHA-256 integrity values and inspected the file signature.",
+      "bullets": [
+        "Detected type: ZIP archive",
+        "MD5: 52cdf67c718d44cb1907f7fb9993c568",
+        "SHA-256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate dfir report.docx\n[OK] MD5: 52cdf67c718d44cb1907f7fb9993c568\n[OK] SHA256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44\n[OK] Signature: ZIP archive\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "dfir report.docx",
+        "stored_name": "251bcadd82bb414ca31aa64630bf7c46_dfir report.docx",
+        "size": 18793,
+        "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "detected_type": "ZIP archive",
+        "magic_bytes": "50 4b 03 04",
+        "md5": "52cdf67c718d44cb1907f7fb9993c568",
+        "sha256": "9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44"
+      }
+    },
+    {
+      "id": "CASE-20260825-174922",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing and signature analysis",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 17:49:22 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "File Analysis"
+      ],
+      "summary": "Automated analysis completed for dfir report.docx. The application generated MD5/SHA-256 integrity values and inspected the file signature.",
+      "bullets": [
+        "Detected type: ZIP archive",
+        "MD5: 52cdf67c718d44cb1907f7fb9993c568",
+        "SHA-256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate dfir report.docx\n[OK] MD5: 52cdf67c718d44cb1907f7fb9993c568\n[OK] SHA256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44\n[OK] Signature: ZIP archive\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "dfir report.docx",
+        "stored_name": "4fc94e9ebc1743efa86e7993774b0da3_dfir report.docx",
+        "size": 18793,
+        "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "detected_type": "ZIP archive",
+        "magic_bytes": "50 4b 03 04",
+        "md5": "52cdf67c718d44cb1907f7fb9993c568",
+        "sha256": "9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44"
+      }
+    },
+    {
+      "id": "CASE-20260825-173231",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing and signature analysis",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 17:32:31 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "File Analysis"
+      ],
+      "summary": "Automated analysis completed for dfir report.docx. The application generated MD5/SHA-256 integrity values and inspected the file signature.",
+      "bullets": [
+        "Detected type: ZIP archive",
+        "MD5: 52cdf67c718d44cb1907f7fb9993c568",
+        "SHA-256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate dfir report.docx\n[OK] MD5: 52cdf67c718d44cb1907f7fb9993c568\n[OK] SHA256: 9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44\n[OK] Signature: ZIP archive\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "dfir report.docx",
+        "stored_name": "53285f650a574fb58593713f2bce62ce_dfir report.docx",
+        "size": 18793,
+        "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "detected_type": "ZIP archive",
+        "magic_bytes": "50 4b 03 04",
+        "md5": "52cdf67c718d44cb1907f7fb9993c568",
+        "sha256": "9a3524cf043f3f846d9bddf345f032d8dee5fc73530f234d0c0daf99b48d6c44"
+      }
+    },
+    {
+      "id": "CASE-20260825-172721",
+      "title": "Instant Security Audit",
+      "subtitle": "Automated evidence hashing and signature analysis",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 17:27:21 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "File Analysis"
+      ],
+      "summary": "Automated analysis completed for arrear.pdf. The application generated MD5/SHA-256 integrity values and inspected the file signature.",
+      "bullets": [
+        "Detected type: PDF document",
+        "MD5: 4464c755e4aa99c9cea9759c0176eeed",
+        "SHA-256: aa4f540a865818285bdf8b7fab38a72a8effa160428dd87ea9c98866e3e899cc"
+      ],
+      "terminal_title": "Automated Investigation Result",
+      "terminal_output": "$ dfir investigate arrear.pdf\n[OK] MD5: 4464c755e4aa99c9cea9759c0176eeed\n[OK] SHA256: aa4f540a865818285bdf8b7fab38a72a8effa160428dd87ea9c98866e3e899cc\n[OK] Signature: PDF document\n[PASS] Investigation completed",
+      "evidence": {
+        "filename": "arrear.pdf",
+        "stored_name": "f6b71aed8b6241c1872df45d2f3cf583_arrear.pdf",
+        "size": 81029,
+        "mime_type": "application/pdf",
+        "detected_type": "PDF document",
+        "magic_bytes": "25 50 44 46 2d",
+        "md5": "4464c755e4aa99c9cea9759c0176eeed",
+        "sha256": "aa4f540a865818285bdf8b7fab38a72a8effa160428dd87ea9c98866e3e899cc"
+      }
+    },
+    {
+      "id": "case-a",
+      "title": "Case A: Deleted File Recovery & Carving",
+      "subtitle": "Unallocated Partition Sector Carving & Magic Byte Check",
+      "investigator": "Srayansh Yadav",
+      "date": "Active Case",
+      "tags": [
+        "Autopsy",
+        "FTK Imager",
+        "Magic Bytes Carving",
+        "MD5/SHA256"
+      ],
+      "summary": "Recovered deleted financial and technical blueprint files from unallocated partition sectors using Autopsy and custom signature verification tools.",
+      "bullets": [
+        "Acquired bit-for-bit raw disk image using write-blocking protection.",
+        "Identified NTFS $MFT unallocated cluster offsets.",
+        "Carved 12 intact files verified by magic byte signatures (%PDF-1.7, PNG, PK)."
+      ],
+      "terminal_title": "Terminal \u2014 Autopsy Magic Byte Check",
+      "terminal_output": "$ hexdump -C /working/carved/CARV-001.pdf | head -n 4\n00000000  25 50 44 46 2d 31 2e 37 0d 0a 25 d0  |%PDF-1.7..%.....|\n00000010  0a 31 20 30 20 6f 62 6a 0d 0a 3c 3c  |.1 0 obj<</Typ  |\n\n$ python3 scripts/hash_verifier.py --verify evidence/evidence_manifest.json\n[*] Verifying manifest created for CARV-001.pdf...\n[PASS] Cryptographic Integrity VERIFIED (MD5 & SHA256 Match)"
+    },
+    {
+      "id": "case-b",
+      "title": "Case B: Volatile Memory Forensics",
+      "subtitle": "Windows 10 RAM Capture & Process Injection Detection",
+      "investigator": "Srayansh Yadav",
+      "date": "Active Case",
+      "tags": [
+        "Volatility 3",
+        "Process Tree",
+        "Netscan",
+        "Malfind RWX"
+      ],
+      "summary": "Analyzed a 16 GB Windows RAM capture using Volatility 3 to uncover stealth process hollowing and unauthorized command & control channels.",
+      "bullets": [
+        "Flagged svchost.exe (PID 4812) running illegally under parent cmd.exe (PID 3920).",
+        "Discovered active TCP socket connection to C2 IP 198.51.100.45:8443.",
+        "Detected injected MZ header in VAD memory section with PAGE_EXECUTE_READWRITE permissions."
+      ],
+      "terminal_title": "Volatility 3 \u2014 Anomaly Detection",
+      "terminal_output": "$ python3 vol.py -f memdump.raw windows.pstree\nName                PID    PPID   Time Created\nsystem              4      0      12:00:00\n |- services.exe    640    492    12:00:05\n |   |- svchost.exe 892    640    12:00:08 (Legitimate)\n |- cmd.exe         3920   2140   14:15:22\n     |- svchost.exe 4812   3920   [ANOMALOUS PARENT CMD]\n\n$ python3 vol.py -f memdump.raw windows.netscan\nTCPv4 192.168.1.105:49210 -> 198.51.100.45:8443 ESTABLISHED PID:4812"
+    },
+    {
+      "id": "case-c",
+      "title": "Case C: Browser Artifact Reconstruction",
+      "subtitle": "SQLite Web History Parsing & NTFS $MFT Timeline",
+      "investigator": "Srayansh Yadav",
+      "date": "Active Case",
+      "tags": [
+        "SQLite3",
+        "Browser Forensics",
+        "NTFS $MFT MACB",
+        "Timeline Correlation"
+      ],
+      "summary": "Parsed Chrome and Firefox SQLite history stores to reconstruct the user browsing session leading up to infection, cross-referencing against NTFS $MFT file creation timestamps.",
+      "bullets": [
+        "Extracted Chrome urls and downloads SQLite databases.",
+        "Matched search query 'invoice update download free' at 14:10:05 UTC.",
+        "Correlated download completion time with NTFS creation timestamp of invoice_update.exe."
+      ],
+      "terminal_title": "Python \u2014 Browser Artifact Parser",
+      "terminal_output": "$ python3 scripts/parse_browser_history.py --db History --browser chrome\n[OK] Exported 28 browser artifacts to: browser_artifacts.json\n\n$ python3 scripts/timeline_builder.py --inputs browser.json memory.json\n[OK] Master DFIR Timeline built with 42 events -> master_timeline.md"
+    },
+    {
+      "id": "case-d-004",
+      "title": "Case D-004: Phishing Workstation Artifact Analysis",
+      "subtitle": "Investigation on chain_of_custody_template.md",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 16:38:51 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "File Evidence"
+      ],
+      "summary": "Investigated suspect email download attachment and cross-referenced timestamps.",
+      "bullets": [
+        "Target evidence location: evidence/chain_of_custody_template.md",
+        "MD5 Hash: 20c80cfdc072a5e7...",
+        "SHA256 Hash: cecb334606ee801a...",
+        "Formal case report generated and chain-of-custody logged."
+      ],
+      "terminal_title": "Terminal \u2014 Case D-004 Hash Verification",
+      "terminal_output": "$ python3 scripts/hash_verifier.py --verify evidence/chain_of_custody_template.md\n[*] Hashing target evidence file...\n    MD5:    20c80cfdc072a5e71c8baa1fd3fddcf9\n    SHA256: cecb334606ee801a50b21c8b40607bcc900a6f7cd00d7a1f162f9ba90f799d3a\n[PASS] Cryptographic Integrity VERIFIED"
+    },
+    {
+      "id": "case-fast-221821",
+      "title": "Case FAST-221821: Instant Security Audit",
+      "subtitle": "Investigation on chain_of_custody_template.md",
+      "investigator": "Srayansh Yadav",
+      "date": "2026-08-25 16:48:21 UTC",
+      "tags": [
+        "DFIR Investigation",
+        "Evidence Verified",
+        "File Evidence"
+      ],
+      "summary": "Instant automated investigation executed on evidence/chain_of_custody_template.md per DFIR standards.",
+      "bullets": [
+        "Target evidence location: evidence/chain_of_custody_template.md",
+        "MD5 Hash: 20c80cfdc072a5e7...",
+        "SHA256 Hash: cecb334606ee801a...",
+        "Formal case report generated and chain-of-custody logged."
+      ],
+      "terminal_title": "Terminal \u2014 Case FAST-221821 Hash Verification",
+      "terminal_output": "$ python3 scripts/hash_verifier.py --verify evidence/chain_of_custody_template.md\n[*] Hashing target evidence file...\n    MD5:    20c80cfdc072a5e71c8baa1fd3fddcf9\n    SHA256: cecb334606ee801a50b21c8b40607bcc900a6f7cd00d7a1f162f9ba90f799d3a\n[PASS] Cryptographic Integrity VERIFIED"
+    }
+  ]
+}
